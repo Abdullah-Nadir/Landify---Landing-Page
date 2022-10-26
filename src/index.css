@@ -1,13 +1,266 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Nanum+Pen+Script&display=swap');
+
+/* BASIC GLOBAL STYLES */
+
+* {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+}
+  
+/* NAVBAR */
+
+.navbar {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    box-shadow: 0px 1px 0px #E5E9F2;
+}
+.nav-links {
+    margin-left: 165px;
+}
+.navbar a {
+    color: black;
+    margin-left: 16px;
+    text-decoration: none;
+    padding: 6px;
+}
+.nav-buttons {
+    margin-right: 165px;
+}
+.login-btn {
+    background-color: #F1E4FF;
+    color: #8C30F5;
+    border: 0;
+    padding: 8px 28px;
+    margin-right: 16px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+.signup-btn {
+    background-color: #8C30F5;
+    color: #FFFFFF;
+    border: 0;
+    padding: 8px 28px;
+    margin-right: 16px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+/* NAVBAR MEDIA-QUERIES */
+
+@media (max-width: 1000px) {
+
+    .nav-img {
+        margin: auto;
+    }
+    .nav-buttons {
+        margin: auto;
+    }
+    
+}
+@media (max-width: 800px) {
+
+    .nav-img {
+        margin-left: 20px;
+        margin-right: 50px;
+    }
+    .nav-links {
+        margin: auto;
+    }
+    .nav-buttons {
+        margin:  20px auto 10px;
+    }
+    
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* HEADER SECTION */
+
+#header-section {
+    margin: 50px 100px;
+}
+.header {
+    padding-left: 80px;
+    padding-bottom: 40px;
+}
+.header-title {
+    padding-top: 10%;
+    padding-bottom: 7%;
+}
+.header-heading {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 1.4;
+    color: #18191F;
+}
+.header-para {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #18191F;
+}
+.header-btn {
+    border: 0;
+    padding: 16px 41px;
+    background-color: #8C30F5;
+    color: #FFFFFF;
+    border-radius: 8px;
+}
+.header-images {
+    position: relative;
+}
+.header-circle {
+    position: absolute;
+    width: 80%;
+    right: 65px;
+    top: 70px;
+}
+.header-img {
+    position: absolute;
+    width: 80%;
+    top: 107px;
+    left: 175px;
+}
+
+/* HEADER SECTION MEDIA QUERIES */
+
+@media (max-width: 900px) {
+    .header {
+        text-align: center;
+        padding-left: 0;
+        padding-bottom: 0;
+        padding: 10px 50px;
+    }
+    .header-heading {
+        font-size: 52px;
+    }
+    .header-circle {
+       display: none;
+    }
+    .header-img {
+        position: static;
+        width: 100%;
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+}
+
+/* CLIENTS SECTION */
+
+#clients-section {
+    padding: 3% 15%;
+    text-align: center;
+}
+.client-header {
+    margin-bottom: 60px;
+}
+.client-heading {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 64px;
+    color: #18191F;
+}
+
+/* Services Section */ 
+
+#services {
+    padding: 80px 0;
+    margin-left: 32px;
+    margin-right: 32px;
+    text-align: center;
+    gap: 48px;
+    background: #0B0D17;
+}
+.services-heading {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 64px;
+    color: #FFFFFF;
+}
+.services-btn {
+    background-color: #0B0D17;
+    border: none;
+}
+.services-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 4% 7%;
+    text-align: left;
+}
+.card {
+    width: 300px;
+    height: 350px;
+    padding: 40px 32px;
+    margin: 20px 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    border: 0;
+}
+.card-head {
+    width: 11%;
+    margin-bottom: 36px;
+}
+.card-heading {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 12px;
+    color: #18191F;
+}
+.card-para {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+/* TESTIMONIALS SECTION */
+
+#testimonials {
+    background-color: #D5FAFC;
+}
+.testimonial-quotes {
+    position: relative;
+    top: 64px;
+    left: 165px;
+}
+.stories-header {
+    position: relative;
+    left: 260px;
+    width: 300px;
+}
+.stories-heading {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 54px;
+    color: #18191F;
+}
+.stories-para {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+/* STORIES MEDIAQUERIES */
+
+@media (max-width: 650px) {
+    .testimonial-quotes {
+        top: 40px;
+        left: 50px;
+    }
+    .stories-header {
+        left: 140px;
+        width: 190px;
+    }
+    .stories-heading {
+        font-size: 28px;
+        line-height: 44px;
+    }
 }
